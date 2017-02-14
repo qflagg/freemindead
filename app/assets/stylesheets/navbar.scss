@@ -1,0 +1,149 @@
+body {
+	background-color: #000;
+	color: #fff;
+
+	.navbar-default, .navbar-collapse {
+		background-color: #000 !important;
+		border-color: #000 !important;
+	}
+
+	header {
+		.navbar-inner {
+			text-align: center;
+
+			.brand-social-media {
+				.social-media {
+					position: relative;
+					top: 60px;
+
+					a { color: white; }
+
+					.fa {
+						font-size: 25px;
+						padding: 0 10px;
+					}
+
+					span {
+						width: 450px;
+						display: inline-block;
+					}
+				}
+				.brand {
+					font-family: 'Permanent Marker', cursive;
+					font-size: 60px;
+		    	text-decoration: none;
+		    	color: #fff;
+				}
+			}
+
+			.navbar-collapse {
+				ul {
+					margin: 0 auto;
+					display: inline-block;
+
+					.menu-social {
+						display: none;
+					}
+
+					li {
+						a {
+							color: white;
+							font-family: 'Ek Mukta', sans-serif;
+							font-size: 20px;
+						}
+					}
+				}
+			} 
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	body {
+		header {
+			.navbar-inner {
+				.brand-social-media {
+					.social-media {
+						.fa {
+							font-size: 25px;
+							padding: 0 5px;
+						}
+
+						span {
+							width: 430px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav {
+		float: none;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		header {
+			.navbar-inner {
+				text-align: left;
+
+				.brand-social-media {
+					.social-media {
+						position: relative;
+				    top: 14px;
+				    right: 50px;
+				    float: right;
+
+						span {
+							width: 0;
+						}
+					}
+					.brand {
+						font-size: 30px;
+						padding-top: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-collapse {
+		text-align: center;
+	}
+}
+
+@media (max-width: 590px) {
+	body {
+		header {
+			.navbar-inner {
+				text-align: left;
+
+				.brand-social-media {
+					.social-media {
+						display: none;
+					}
+				}
+			}
+		}
+		header {
+			.navbar-inner {
+				.navbar-collapse {
+					ul {
+						.menu-social {
+							display: block;
+						}
+
+						.fa {
+							font-size: 22px;
+    					padding: 15px 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
