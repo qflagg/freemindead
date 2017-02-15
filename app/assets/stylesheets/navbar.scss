@@ -1,10 +1,11 @@
 body {
-	background-color: #000;
-	color: #fff;
-
 	.navbar-default, .navbar-collapse {
 		background-color: #000 !important;
 		border-color: #000 !important;
+	}
+
+	.navbar {
+		border-radius: 0px;
 	}
 
 	header {
@@ -31,8 +32,8 @@ body {
 				.brand {
 					font-family: 'Permanent Marker', cursive;
 					font-size: 60px;
-		    	text-decoration: none;
-		    	color: #fff;
+					text-decoration: none;
+					color: #fff;
 				}
 			}
 
@@ -40,6 +41,7 @@ body {
 				ul {
 					margin: 0 auto;
 					display: inline-block;
+					padding-left: 50px;
 
 					.menu-social {
 						display: none;
@@ -128,8 +130,7 @@ body {
 					}
 				}
 			}
-		}
-		header {
+
 			.navbar-inner {
 				.navbar-collapse {
 					ul {
@@ -137,9 +138,28 @@ body {
 							display: block;
 						}
 
-						.fa {
-							font-size: 22px;
-    					padding: 15px 5px;
+						li {
+							width: 100%;
+
+							a {
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 477px) {
+	body {
+		header {
+			.navbar-inner {
+				.navbar-collapse {
+					ul {
+						.menu-social {
+							display: none;
 						}
 					}
 				}
