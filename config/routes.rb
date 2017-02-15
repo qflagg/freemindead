@@ -55,4 +55,7 @@ Rails.application.routes.draw do
   #   end
 
   root 'home#index'
+
+  get 'music' => 'music#index'
+  get 'contact' => 'contact#index'
 end
