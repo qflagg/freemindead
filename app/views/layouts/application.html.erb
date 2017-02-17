@@ -10,6 +10,18 @@
   <link href="https://fonts.googleapis.com/css?family=Ek+Mukta|Permanent+Marker" rel="stylesheet">
 </head>
 <body>
+  <div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
+            <source src="/images/flyingbirds/MP4/Flying-Birds.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="/images/flyingbirds/WEBM/Flying-Birds.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="/images/flyingbirds/Snapshots/Flying-Birds.jpg" alt="">
+        </div>
+    </div>
+  </div>
 	<%= render file: '/partials/navbar.html.erb' %>
 
 	<div class="container-fluid">

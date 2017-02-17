@@ -17,11 +17,15 @@ body {
 					position: relative;
 					top: 60px;
 
-					a { color: white; }
+					a { color: #69d3fa; }
 
 					.fa {
 						font-size: 25px;
 						padding: 0 10px;
+
+						&:hover {
+							opacity: .5;
+						}
 					}
 
 					span {
@@ -33,7 +37,7 @@ body {
 					font-family: 'Permanent Marker', cursive;
 					font-size: 60px;
 					text-decoration: none;
-					color: #fff;
+					color: #69d3fa;
 				}
 			}
 
