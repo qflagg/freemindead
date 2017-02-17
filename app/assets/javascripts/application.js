@@ -13,5 +13,55 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require bootstrap-sprockets
+//= require_tree .
+
+
+
+var PATHS = {
+  'root': '',
+  'home': 'home',
+  'music': 'music',
+  'contact': 'contact'
+};
+
+var BACKGROUNDS = {
+  'flying_birds': "url('/images/Flying-Birds.gif') no-repeat center fixed;",
+  'boat': "url('/images/Love-Boat.gif') no-repeat center fixed;",
+  'stone_falls': "url('/images/Stone-Falls.gif') no-repeat center fixed;",
+}
+
+$( window ).load( function( event )  {
+  pathBackground();
+
+  // $('.nav li').each( function() {
+  //   var item = $( this ).data('menu');
+
+  //   if( item ) {
+  //   	var background = selectedBackground( item );
+  //   	$( this ).hover( function() { updateBackground( background ) }, pathBackground );
+  //   }
+  // });
+});
+
+function pathBackground() {
+	var path = location.pathname.split("/")[1];
+  var background = selectedBackground( path );
+  updateBackground( background );
+}
+
+function selectedBackground( path ) {
+  switch( path ) {
+    case PATHS.root:
+    case PATHS.home:
+      return BACKGROUNDS.flying_birds;
+    case PATHS.music:
+      return BACKGROUNDS.boat;
+    case PATHS.contact:
+      return BACKGROUNDS.stone_falls;
+  }
+}
+
+function updateBackground( background ) {
+	$('body').attr( 'style', 'background:' + background );
+}
