@@ -58,4 +58,5 @@ Rails.application.routes.draw do
 
   get 'music' => 'music#index'
   get 'contact' => 'contact#index'
+  get 'bio' => 'bio#index'
 end

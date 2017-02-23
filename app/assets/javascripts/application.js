@@ -22,13 +22,15 @@ var PATHS = {
   'root': '',
   'home': 'home',
   'music': 'music',
-  'contact': 'contact'
+  'contact': 'contact',
+  'bio': 'bio'
 };
 
 var BACKGROUNDS = {
   'flying_birds': "url('/images/Flying-Birds.gif') no-repeat center fixed;",
   'boat': "url('/images/Love-Boat.gif') no-repeat center fixed;",
   'stone_falls': "url('/images/Stone-Falls.gif') no-repeat center fixed;",
+  'the_launch': "url('/images/The-Launch.gif') no-repeat center fixed;"
 }
 
 $( window ).load( function( event )  {
@@ -59,6 +61,8 @@ function selectedBackground( path ) {
       return BACKGROUNDS.boat;
     case PATHS.contact:
       return BACKGROUNDS.stone_falls;
+     case PATHS.bio:
+     	return BACKGROUNDS.the_launch;
   }
 }
 
